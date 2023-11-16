@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/button"
+    tools:context=".calendarpackage.DailyCalendarActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="@string/back"
+            android:textColor="@color/back_ground"
+            android:textStyle="bold"
+            android:onClick="previousDayAction"
+            android:textSize="30sp"
+            android:background="@drawable/dialog_btn_bg"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_margin="0dp"/>
+
+        <TextView
+            android:id="@+id/monthDayText"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:text="Feb 2021"
+            android:textSize="30sp"
+            android:textAlignment="center"
+            android:textColor="@color/back_ground"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="@string/forward"
+            android:textColor="@color/back_ground"
+            android:textStyle="bold"
+            android:onClick="nextDayAction"
+            android:textSize="30sp"
+            android:background="@drawable/dialog_btn_bg"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_margin="0dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/dayOfWeekTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Monday"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:textSize="18sp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="新增事件"
+        android:textColor="@color/black"
+        android:textStyle="italic"
+        android:onClick="newEventAction"
+        android:layout_gravity="center"
+        android:textSize="15sp"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/back_ground"
+        android:layout_marginBottom="20dp" />
+
+    <ListView
+        android:background="@color/back_ground"
+        android:id="@+id/hourListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"/>
+
+</LinearLayout>

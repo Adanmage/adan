@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/back_ground"
+    tools:context=".calendarpackage.EventEditActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="行程名稱:"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/eventNameET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@drawable/dialog_btn_bg"
+        android:ems="8"
+        android:inputType="text"
+        android:paddingLeft="10dp"
+        android:paddingTop="8dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="8dp"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/eventDateTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="日期"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:textColor="@color/black" />
+
+
+
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="儲存"
+        android:textColor="@color/black"
+        android:background="@color/button"
+        android:textStyle="bold"
+        android:onClick="saveEventAction"
+        android:layout_gravity="center"
+        android:textSize="20sp"/>
+
+</LinearLayout>
